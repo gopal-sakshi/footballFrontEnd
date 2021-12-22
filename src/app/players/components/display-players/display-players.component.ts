@@ -8,20 +8,20 @@ import { PlayerService } from '../../services/player.service';
 })
 export class DisplayPlayersComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'age', 'nationality', 'presentClub'];
+  displayedColumns: string[] = ['name', 'age', 'nationality', 'presentClub', 'position'];
   dataSource:any;
 
   playersData:any;
   constructor(public playerService: PlayerService) { }
 
   ngOnInit(): void {
-    
-    
+
+
     this.playerService.getPlayers().subscribe(res => {
       this.playersData = res;
       console.log(this.playersData);
       this.dataSource = this.playersData.Items;
-    });    
+    });
   }
 
 }
