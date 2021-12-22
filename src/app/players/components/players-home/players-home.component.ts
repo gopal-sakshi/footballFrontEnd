@@ -12,4 +12,8 @@ export class PlayersHomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  doStuff(someString:string) {
+    console.log(someString);
+    console.log("i m doing stuff");
+  }
 }
