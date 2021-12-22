@@ -1,0 +1,29 @@
+<form [formGroup]="playerForm" (ngSubmit)="playerFormSubmitted()">
+  <div class = "player-form-class" fxLayout="column" fxLayoutGap="10px">
+
+  
+  <input type="text" placeholder='Player Name' formControlName = "name">
+
+  <input type="number" placeholder='Age' formControlName = "age">
+
+  <input type="text" placeholder='nationality' formControlName = "nationality">
+
+  <input type="text" placeholder='present club' formControlName = "presentClub">
+
+  
+  <label>Choose Position</label>
+  <select formControlName="position">
+    <option value="Goal Keeper">Goal Keeper</option>
+    <option value="Left Back">Left Back</option>
+    <option value="Right Back">Right Back</option>
+    <option value="Center Back">Center Back</option>
+    <option value="Midfielder">Midfielder</option>
+    <option value="Left winger">Left winger</option>
+    <option value="Right winger">Right winger</option>
+    <option value="Striker">Striker</option>
+  </select>
+  </div>
+
+  <button mat-primary-button type="submit"> Submit</button>
+
+</form>

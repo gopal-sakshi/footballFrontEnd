@@ -1,0 +1,41 @@
+<p> Add Player </p>
+
+<!-- for some reason mat options isnt being displayed correctly... hence, use normal html thingy for the time being -->
+<form [formGroup]="playerForm" (ngSubmit)="playerFormSubmitted()">
+    <div class = "player-form-class" fxLayout="column" fxLayoutGap="10px">
+        <mat-form-field appearance="fill">            
+            <input matInput [placeholder]="'Player Name'" formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput [placeholder]="'Age'" formControlName="age">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput [placeholder]="'Nationality'" formControlName="nationality">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput [placeholder]="'present club'" formControlName="presentClub">
+        </mat-form-field>
+        <mat-form-field appearance="fill">            
+            <mat-select formControlName="position" placeholder='position' [disableOptionCentering]="false">
+                <mat-option value="Goal Keeper">Goal Keeper</mat-option>
+                <mat-option value="Left Back">Left Back</mat-option>
+                <mat-option value="Right Back">Right Back</mat-option>
+                <mat-option value="Center Back">Center Back</mat-option>
+                <mat-option value="Midfielder">Midfielder</mat-option>
+                <mat-option value="Left winger">Left winger</mat-option>
+                <mat-option value="Right winger">Right winger</mat-option>
+                <mat-option value="Striker">Striker</mat-option>
+            </mat-select>
+        </mat-form-field>        
+    </div>
+    <button mat-primary-button type="submit"> Submit</button>
+</form>
+
+
+<label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
