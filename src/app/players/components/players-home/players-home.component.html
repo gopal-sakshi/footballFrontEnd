@@ -1,15 +1,20 @@
+<div class="players-home-container" fxLayout="column" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutGap="20px" class="players-home" fxShow.xs fxHide>
 
-<div fxLayout="row" fxLayoutGap="20px" class="players-home" fxShow.xs fxHide>
-
-    <a [routerLink]="['display-players']"> display players </a>
-    <a [routerLink]="['add-player']"> add player </a>
-    {{doStuff('hello')}}
-</div>
-
-
-<div fxLayout="row" fxLayoutGap="20px" class="players-home" fxHide.xs fxShow>
-
-    <a [routerLink]="['display-players']"> display playersss </a>
-    <a [routerLink]="['add-player']"> add playerrr </a>
-    {{doStuff('doctor')}}
+        <a [routerLink]="['display-players']"> display players </a>
+        <a [routerLink]="['add-player']"> add player </a>
+        {{doStuff('hello')}}
+    </div>
+    
+    
+    <div fxLayout="row" fxLayoutGap="20px" class="players-home" fxHide.xs fxShow>
+    
+        <a [routerLink]="['display-players']"> display playersss </a>
+        <a [routerLink]="['add-player']"> add playerrr </a>
+        {{doStuff('doctor')}}
+    </div>
+    
+    <div class="gopal-testing-library">
+        <lib-notification12 [message]=" 'some message' "></lib-notification12>
+    </div>
 </div>

@@ -14,6 +14,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatSortModule } from '@angular/material/sort';
+import { Messages12Module } from 'gopal612-testing-library';
 
 
 
@@ -38,7 +39,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,    
     MatNativeDateModule,    
     MatSelectModule,    
-    MatButtonModule,    
+    MatButtonModule,
+    Messages12Module
   ],
   providers: [
     PlayerService
